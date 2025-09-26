@@ -1,5 +1,4 @@
-﻿
-namespace JogoDaForca
+﻿namespace JogoDaForca
 {
     partial class Form1
     {
@@ -81,6 +80,7 @@ namespace JogoDaForca
             this.txtLetra.Size = new System.Drawing.Size(141, 29);
             this.txtLetra.TabIndex = 3;
             this.txtLetra.TextChanged += new System.EventHandler(this.txtLetra_TextChanged);
+            this.txtLetra.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLetra_KeyPress);
             // 
             // btnTentar
             // 
@@ -124,7 +124,6 @@ namespace JogoDaForca
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Status do Jogo";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // Form1
             // 
@@ -141,7 +140,7 @@ namespace JogoDaForca
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = " ";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -160,4 +159,3 @@ namespace JogoDaForca
         private System.Windows.Forms.GroupBox groupBox1;
     }
 }
-
